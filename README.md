@@ -1,4 +1,4 @@
-# Simple r3f carshow
+# Simple r3f carshow [![Netlify Status](https://api.netlify.com/api/v1/badges/167c9ec5-789a-4fcd-b944-1bf98b4dac7d/deploy-status)](https://app.netlify.com/sites/r3f-car-waqas/deploys)
 
 ## Prerequisites
 
