@@ -19,16 +19,22 @@ import { Car } from "./Car";
 import { Ground } from "./Ground";
 import { FloatingGrid } from "./FloatingGrid";
 import { Rings } from "./Rings";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function CarShow() {
+
   return (
     <>
-      <OrbitControls 
+      <OrbitControls
         target={[0, 0.35, 0]}
         maxPolarAngle={1.45}
+        enabled={true}
       />
 
-      <PerspectiveCamera makeDefault fov={50} position={[3, 2, 5]} />
+      <PerspectiveCamera makeDefault fov={50} position={[5, 2, 5]} />
 
       <color args={[0, 0, 0]} attach="background" />
 
@@ -65,7 +71,7 @@ function CarShow() {
       <Rings />
 
       <EffectComposer>
-        {/* <DepthOfField focusDistance={0.0035} focalLength={0.01} bokehScale={3} height={480} /> */}
+        <DepthOfField focusDistance={0.0035} focalLength={0.01} bokehScale={3} height={480} />
         <Bloom
           blendFunction={BlendFunction.ADD}
           intensity={1.3} // The bloom intensity.
