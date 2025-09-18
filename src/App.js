@@ -6,7 +6,7 @@ import {
   Bloom,
   ChromaticAberration,
 } from "@react-three/postprocessing";
-import { BlendFunction } from "postprocessing"
+import { BlendFunction } from "postprocessing";
 import {
   CubeCamera,
   Environment,
