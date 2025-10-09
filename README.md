@@ -15,7 +15,7 @@ npm install -g create-react-app
 
 The Application is deployed in [R3F car](https://r3f-car-waqas.netlify.app/)
 
-Click on the link to see the application
+Click on the link to see the applicatio
 
 ## Cloning and Running the Application in local
 
